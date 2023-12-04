@@ -11,9 +11,9 @@ userName.addEventListener("input", (event) => {
 
 userName.addEventListener("blur", (event) => {
   if (!event.target.value || event.target.value.trim() === "") {
-      alert(anonymous);
+    userAnonymous.textContent = anonymous;
   } else {
-      alert(username)
+    userAnonymous.textContent = username;
   }
   event.preventDefault()
 });
